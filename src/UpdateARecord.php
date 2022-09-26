@@ -13,7 +13,10 @@ use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-#[AsCommand(name: 'ddns:update-a-record')]
+#[AsCommand(
+    name: 'update',
+    description: 'Updates DNS A record with the public IP.',
+)]
 class UpdateARecord extends Command
 {
     protected function execute(InputInterface $input, OutputInterface $output): int
