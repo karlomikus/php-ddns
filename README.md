@@ -28,3 +28,7 @@ $ php ddns update
 ```
 
 4. Setup cron job
+
+```shell
+*/15 * * * * php /path/to/project/src/boostrap.php ddns:update-a-record
+```
